@@ -1,8 +1,15 @@
 # 安徽理工大学双校区校园网自动登录工具
 
+
+在此特别感谢   https://github.com/TraceRecursion/AUST-ConnectEase
+以及   https://github.com/hanasite/AUST
+提供的淮南校区的数据，不然我一个合肥校区的，确实无法完成淮南校区的部分，
+站在巨人肩膀了也是，真是lucky.
+
+
 支持合肥校区和淮南校区的 Dr.COM 校园网认证，提供单次登录、持续断线重连和 Windows 登录后后台自启。
 
-## 支持范围
+mj## 支持范围
 
 | 校区 | 认证接口 | 已知出口 |
 | --- | --- | --- |
@@ -22,7 +29,7 @@ README.md               使用说明
 
 运行后产生的 `aust_autologin.log` 可能包含学号、IP、MAC，不要公开分享。
 
-## 准备
+## 准备isa
 
 安装 Python 3，并确认：
 
@@ -32,7 +39,7 @@ python --version
 
 连接校园 Wi-Fi，然后在本工具目录打开 PowerShell。
 
-## 首次手动测试
+## 首次手动测试bone
 
 合肥移动用户示例：
 
@@ -133,6 +140,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\卸载开机启动.ps1
 - 共享 ZIP 中不应包含运行后生成的日志和凭据；
 - 本工具只用于本人合法校园网账号的正常认证。
 
-## 淮南数据来源
+## 淮南数据来源kfc
 
 淮南接口和出口参数参考公开项目：<https://github.com/TraceRecursion/AUST-ConnectEase>。该项目说明的请求字段为 `callback=dr1003`、`DDDDD=账号加后缀`、`upass=密码`、`0MKKey=123456`。
